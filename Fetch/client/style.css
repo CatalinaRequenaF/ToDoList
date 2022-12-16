@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+}
+
+/*------------INICIO------------*/
+.inicio{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio div{
+    height: 200px;
+    width: auto;
+    margin:10px;
+    padding: 10px;
+    display: block;
+}
+
+/*------------Crear notas------------*/
+#crearNota{
+    display: block;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+
+/*------------Mostrar todas las notas (boton)------------*/
+
+.btn-ini{
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
+/*--------DISPLAY DE NOTAS--------*/
+.listaNotas{
+    background-color: rgb(172, 255, 255);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+/*ESTILOS DE NOTA*/
+.contenedor{
+    background-color: rgb(65, 193, 202);
+    width: 200px;
+    justify-items: center;
+    padding:30px;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.contenedor p{
+    overflow-x: auto;
+    min-height: 100px;
+    vertical-align: top;
+}
+
+.contenedor span{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/*----------------------------------------------*/
+.overlay { 
+   position: fixed;
+    top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.7);
+   transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility:visible;
+    opacity:1
+}
+
+#popup div {
+height: 250px;
+}
+
+#cerrar{
+    margin-top: 50px;
+    position: fixed;
+    margin-left: 0;
+
+}
+
+/*---------------------*/
+
+a, button{
+    padding: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(255, 235, 235);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 15px;
+    border-width: 0ch;
+}
+
+/*-----------*/
+
+#crearNota, #buscarTitulo{
+    padding: 40px;
+    border-radius: 5px;
+}
